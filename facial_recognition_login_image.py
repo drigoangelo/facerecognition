@@ -17,7 +17,7 @@ ap.add_argument("-l", "--login", required=True,
 
 args = vars(ap.parse_args())
 
-print("[INFO] loading encodings + face detector + image...")
+#print("[INFO] loading encodings + face detector + image...")
 data = pickle.loads(open(args["encodings"], "rb").read())
 detector = cv2.CascadeClassifier(args["cascade"])
 image = cv2.imread(args["image"]);
