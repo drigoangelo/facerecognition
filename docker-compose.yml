@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+
+    facialrecognition:
+        image: drigoangelo/facialrecognitionlogin:1
+        container_name: lab-facialrecognitionlogin
+        working_dir: /usr/src/app
+        command: tail -f /dev/null # deixa o container executando
+        volumes:
+            - .:/usr/src/app
